@@ -1,0 +1,131 @@
+/* body torso */
+.domo {
+  width: 210px;
+  margin: 20px 40px;
+  height: 300px;
+  border-radius: 15px;
+  background: rgb(108,62,29);
+  position: relative;
+}
+/* left eye */
+.domo:after{
+  content: ' ';
+  border-radius: 50% 50%;
+  background: #000;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+/* right eye */
+.domo:before{
+  content: ' ';
+  border-radius: 50% 50%;
+  background: #000;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.domo li{
+  text-indent: -200px;
+  overflow: hidden;
+}
+ /* mouth outline */
+ .domo ul {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  right: 20px;
+  border-radius: 10px;
+  bottom: 140px;
+  display: block;
+}
+/* right arm */
+.domo ul:before{
+  content: ' ';
+  border-radius: 12px;
+  background: rgb(108,62,29);
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+}
+/* left arm */
+.domo ul:after{
+  content: ' ';
+  border-radius: 12px;
+  background: rgb(108,62,29);
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: -50px;
+}
+/* right foot */
+.domo ul:last-child:before{
+  content: ' ';
+  border-radius: 12px;
+  background: rgb(108,62,29);
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  /* where leg begins */
+  top: 180px;
+  right: 10px;
+}
+/* left foot */
+.domo ul:last-child:after{
+  content: ' ';
+  border-radius: 12px;
+  background: rgb(108,62,29);
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  /* where leg begins */
+  top: 180px;
+  left: 10px;
+}
+/* mouth red background */
+.domo ul:first-child {
+  background: #c00;
+}
+/* bottom teeth */  
+.domo ul li {
+  width: 0;
+  height: 0;
+  /* left slant */
+  border-left: 15px solid transparent;
+  /* right slant*/
+  border-right: 15px solid transparent;
+  /* width */
+  border-bottom: 15px solid #fff;
+  position: relative;
+  /* position from top */
+  top:  75px;
+  float: left;
+  margin-left: -5px;
+  list-style: none;
+  left: 10px;
+}
+/* top teeth */
+.domo ul:first-child li {
+  width: 0;
+  height: 0;
+  /* left slant */
+  border-left: 15px solid transparent;
+  /* right slant */
+  border-right: 15px solid transparent;
+  /* width */
+  border-top: 15px solid #fff;
+  border-bottom: none;
+  position: relative;
+  top: 00;
+  float: left;
+  margin-left: -5px;
+  list-style: none;
+  left: 10px;
+}
