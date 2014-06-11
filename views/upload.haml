@@ -1,13 +1,14 @@
-= haml(:_signin, :layout => false)
+-# = haml(:_signin, :layout => false)
 
 .row
   .span9
     %h1
       %img(class="modal-h-img sprite s_upload_32 modal-h-img" src="/img/icon_spacer.gif")
-      Send files to #{@user.display_name}
-      %small(style="font-size: 10pt")= "Dropbox/Apps/dbinbox/" + @subfolder
+-#      Send files to #{@user.display_name}
+-#      %small(style="font-size: 10pt")= "Dropbox/Apps/dbinbox/" + @subfolder
 
-.span8.offset2.instructions drag your file(s) here to upload
+.span8.offset2.instructions Feed Photos to the Domokun
+-# drag your file(s) here to upload
 
 %form.span12{action: @action, multipart: true, id: 'upload'}
   %table.filelist
@@ -16,9 +17,9 @@
     %i.icon-plus.icon-white
     %span Choose files
     %input(type="file" name="files[]" multiple)
-  %span.btn#show_send_message{style: "float: right; margin-right: 10px; display: none"}
-    %i.icon-edit.icon-black
-    %span Send Message
+-#  %span.btn#show_send_message{style: "float: right; margin-right: 10px; display: none"}
+-#    %i.icon-edit.icon-black
+-#    %span Send Message
   .span10.fileupload-progress.fade
     .progress.progress-success.progress-striped.active
     .bar{:style => "width:0%;"}
@@ -26,7 +27,8 @@
   .fileupload-loading
 
 #dropzone
-  %span drop your file(s) to upload
+  %span FEED THE DOMOKUN!
+  -# drop your file(s) to upload
 
 .clearfix
 
@@ -48,5 +50,3 @@
   %input.btn.btn-primary(type="submit" value="Send" style="float: right")
 
 .clearfix
-
-
