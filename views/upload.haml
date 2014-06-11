@@ -17,6 +17,9 @@
     %i.icon-plus.icon-white
     %span Choose files
     %input(type="file" name="files[]" multiple)
+  %span.btn.btn-primary.fileinput-button#upload_button{style: "margin: 0 auto;"}
+    %i.icon-plus.icon-white
+    %a{ :href => "/#{@user.username}" } Feed Domokun More Photos
 -#  %span.btn#show_send_message{style: "float: right; margin-right: 10px; display: none"}
 -#    %i.icon-edit.icon-black
 -#    %span Send Message
@@ -29,10 +32,6 @@
 #dropzone
   %span FEED THE DOMOKUN! DOMOKUN NICE
   -# drop your file(s) to upload
-
-%span.btn.btn-primary
-  %i.icon-plus.icon-white
-  %a{ :href => "/#{@user.username}" } Feed Domokun More Photos
 
 -#.clearfix
 -#
