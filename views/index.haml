@@ -7,7 +7,7 @@
   %form.form-inline{action: "/", method: "post"}
     %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
       .input-prepend
-        %span.add-on domokun-photo.com/
+        %span.add-on FeedDomokunPhotos.com/
         %input.span4#username(placeholder="your_username_here" name="username" type="text" value="#{params['username']}")
       %button.btn.btn-success(type='submit' title="links with Dropbox") connect with Dropbox
       %span.help-inline=@error
