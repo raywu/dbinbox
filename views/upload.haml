@@ -1,9 +1,9 @@
 -# = haml(:_signin, :layout => false)
 
-.row
-  / .span9
-  /   %h1
-  /     %img(class="modal-h-img sprite s_upload_32 modal-h-img" src="/img/icon_spacer.gif")
+-#.row
+-#  .span9
+-#    %h1
+-#      %img(class="modal-h-img sprite s_upload_32 modal-h-img" src="/img/icon_spacer.gif")
 -#      Send files to #{@user.display_name}
 -#      %small(style="font-size: 10pt")= "Dropbox/Apps/dbinbox/" + @subfolder
 
@@ -13,7 +13,7 @@
 %form.span12{action: @action, multipart: true, id: 'upload'}
   %table.filelist
     %tbody.files
-  %span.btn.btn-primary.fileinput-button#upload_button{style: "float: right"}
+  %span.btn.btn-primary.fileinput-button#upload_button{style: "margin: 0 auto;"}
     %i.icon-plus.icon-white
     %span Choose files
     %input(type="file" name="files[]" multiple)
@@ -30,23 +30,23 @@
   %span FEED THE DOMOKUN! DOMOKUN NICE
   -# drop your file(s) to upload
 
-/ .clearfix
-/ 
-/ %form.form-horizontal.span12{action: @action, id: 'send_text', method: 'post'}
-/   %legend
-/     %img(class="modal-h-img sprite s_page_white_gray_32 modal-h-img" src="/img/icon_spacer.gif")
-/     Send text file message
-/   .control-group
-/     %label.control-label(for="filename") Filename
-/     .controls
-/       .input-append.input-prepend
-/         .add-on#timestamp=Time.new.strftime("%Y-%m-%d-%H.%M.%S")
-/         %input(type="text" name="filename" id="filename" placeholder="optional ")
-/         .add-on .txt
-/   .control-group
-/     %label.control-label(for="message") Message
-/     .controls
-/       %textarea(name="message")
-/   %input.btn.btn-primary(type="submit" value="Send" style="float: right")
-/ 
-/ .clearfix
+-#.clearfix
+-#
+-#%form.form-horizontal.span12{action: @action, id: 'send_text', method: 'post'}
+-#  %legend
+-#    %img(class="modal-h-img sprite s_page_white_gray_32 modal-h-img" src="/img/icon_spacer.gif")
+-#    Send text file message
+-#  .control-group
+-#    %label.control-label(for="filename") Filename
+-#    .controls
+-#      .input-append.input-prepend
+-#        .add-on#timestamp=Time.new.strftime("%Y-%m-%d-%H.%M.%S")
+-#        %input(type="text" name="filename" id="filename" placeholder="optional ")
+-#        .add-on .txt
+-#  .control-group
+-#    %label.control-label(for="message") Message
+-#    .controls
+-#      %textarea(name="message")
+-#  %input.btn.btn-primary(type="submit" value="Send" style="float: right")
+-#
+-#.clearfix
