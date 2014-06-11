@@ -11,13 +11,13 @@
         %input.span4#username(placeholder="your_username_here" name="username" type="text" value="#{params['username']}")
       %button.btn.btn-success(type='submit' title="links with Dropbox") connect with Dropbox
       %span.help-inline=@error
-
--#      %img(src="/img/dbinbox.gif" alt="dbinbox demo" style="box-shadow: 0px 10px 50px #888888; margin-top: 1em")
 -else
   %p{style: "color: green"} You're registered!
   %p
     -url = url('/') + session[:username] if session[:username]
     %a{href: url}=url
+	
+-#      %img(src="/img/dbinbox.gif" alt="dbinbox demo" style="box-shadow: 0px 10px 50px #888888; margin-top: 1em")
 
 -#.row
 -#  .span8
