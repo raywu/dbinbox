@@ -293,7 +293,7 @@ get_or_post '/send/:username/?*' do
 end
 
 get "/:username/?*" do
-  @@log.info "/#{params[:username]}"
+  @@log.info " "
   @subfolder = params[:splat].first
   @user = User.get(params[:username])
   @action = "/send/" + params[:username] + (@subfolder ? "/" + @subfolder : "")
