@@ -41,39 +41,44 @@ h1{
 }
 
 /* dropzone */
+.instructions {
+	margin: 0;
+}
 
 .instructions, #dropzone {
-  color: #267333;
-  background: #eee;
+  display: block;
+  color: #fff;
+  background: #c00;
   text-align: center;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 28px;
   font-weight: bold;
-  border: 1px dashed black;
-  padding: 30px;
+/*  border: 1px dashed #fff;*/
+/*  padding: 5%;*/
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  position: relative;
+/*  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);*/
 }
 
 #dropzone {
-    background: lawngreen;
-    color: black;
-    opacity:.8;filter:alpha(opacity=80);-moz-opacity:.8;
     display: none;
-    width: 50%;
-    position: fixed;
-    top: 25%;
-    left: 25%;
-    z-index: 50;
-    vertical-align: middle;
+    color: fff;
+    opacity:.9;filter:alpha(opacity=80);-moz-opacity:.8;
+	margin: 0;
+/*	margin: 0 20%;*/
+/*	background: #c00;*/
+/*    position: fixed;
+	top: -30%;*/
+/*    left: -25%;*/
+/*    vertical-align: middle;*/
 }
 
 #dropzone span{
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   /*margin: 30px 10px 30px 10px;*/
-  display: block;
+/*  display: block;*/
 }
 
 #dropzone.in {
@@ -82,6 +87,12 @@ h1{
     /*line-height: 200px;*/
     /*font-size: larger;*/
     display: block;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: bold;
+	position: relative !important;
+	top: -100% !important;
+	z-index: 1;
 }
 #dropzone.hover {
 }
@@ -1978,53 +1989,138 @@ h1{
 /*#gs h1{font-size:20px;font-weight:600;color:#222;margin-top:0}#gs h1 img{margin-left:12px;margin-right:4px;position:relative;top:7px}#gs h2{font-size:16px;font-weight:600;margin:1.25em 0 .75em 0;padding:0;background:none}#gs p{font-size:13px;line-height:1.8em}#gs .explanation{height:120px;padding:12px 40px 20px 54px;margin-top:12px}#gs #progress-box{width:215px;height:193px;position:relative;top:-65px;float:right;margin-left:50px}#gs #progress-box #mask-box{position:absolute}#gs #progress-box img{position:absolute;top:0;left:0;z-index:1}#gs #progress-box #mask{z-index:4}#gs #progress-table{zoom:1;border-collapse:collapse;width:100%;position:relative;font-size:14px}#gs #progress-table .bubble{font-size:13px}#gs #progress-table td.step{padding-top:10px;padding-left:36px;width:49px;height:51px}#gs #progress-table td.step div{position:relative}#gs #progress-table td.step span{position:absolute;z-index:4;top:8px;left:19px;font-size:12px;font-weight:600}#gs #progress-table td.step-desc{width:565px;color:#4c90d6}#gs #progress-table td.step-desc .completed{color:#32951b;text-decoration:line-through}#gs #progress-table td.step-desc .completed:hover{color:#32951b;text-decoration:line-through underline}#gs #progress-table td.step-status{color:#32951b}#gs #gs_award{margin-left:4px;margin-top:3px;width:215px;height:193px;position:absolute;z-index:5 !important}#gs #gs_award span{position:absolute;display:block;width:115px;height:35px;top:83px;left:42px;z-index:6;text-align:center;font-size:24px;font-weight:600;color:#111;line-height:35px}#gs .bubble{position:absolute;width:300px}*/
 
 /* Domo.css */
-/* body torso */
+
 .domo {
-  width: 210px;
-  margin: 20px 40px;
-  height: 300px;
-  border-radius: 15px;
-  background: rgb(108,62,29);
-  position: relative;
+	height: 400px;
 }
+
 /* left eye */
 .domo:after{
   content: ' ';
   border-radius: 50% 50%;
   background: #000;
-  width: 20px;
-  height: 20px;
+  width: 6%;
+  height: 11%;
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 15%;
+  left: 8%;
+  z-index: 1;
 }
 /* right eye */
 .domo:before{
   content: ' ';
   border-radius: 50% 50%;
   background: #000;
-  width: 20px;
-  height: 20px;
+  width: 6%;
+  height: 11%;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 15%;
+  right: 8%;
+  z-index: 1;
 }
 .domo li{
-  text-indent: -200px;
-  overflow: hidden;
+  content: ' ';
 }
  /* mouth outline */
  .domo ul {
-  position: absolute;
-  top: 70px;
+/*  position: absolute;*/
+/*  top: 70px;
   left: 20px;
-  right: 20px;
-  border-radius: 10px;
-  bottom: 140px;
+  right: 20px;*/
+  border-radius: 20px;
+/*  bottom: 140px;*/
   display: block;
+  z-index: 2;
+  margin: 0;
+  bottom: 0;
 }
+/* mouth red background */
+/*.domo ul:first-child {
+  background: #c00;
+}*/
+/* top teeth */
+.domo ul:first-child li {
+    top: 0;
+    /* left slant */
+    border-left: 92px solid transparent;
+    /* right slant */
+    border-right: 92px solid transparent;
+    /* width */
+    border-top: 92px solid #fff;
+    border-bottom: none;
+}
+.domo ul li {
+  width: 0;
+  height: 0;
+  position: relative;
+  float: left;
+  margin-left: 5px;
+  list-style: none;
+  left: 0px;
+  z-index: 2;
+  /* bottom teeth */  
+  /* left slant */
+  border-left: 92px solid transparent;
+  /* right slant*/
+  border-right: 92px solid transparent;
+  /* width */
+  border-bottom: 92px solid #fff;
+}
+
+.container.domo-container {
+	width: 100%;
+	height: auto;
+}
+
+.domo-body {
+	background: rgb(108,62,29);
+	z-index: 200;
+}
+
+/* .domo-mouth {
+  background: #c00;
+  border-radius: 20px;
+  display: block;
+  z-index:100; */
+/*  border: 5px solid #fff;*/
+/*  margin: 25% 10% 15% 10%;
+  padding: 10% 10% 10% 10%;
+  min-width: 250px;
+  min-height: 100px;*/
+/*  padding: 5px;*/
+/* }*/
+
+#upperteeth {
+	background-image: repeating-linear-gradient(
+	width: 0;
+	height: 0;
+	/* left slant */
+    border-left: 15px solid transparent;
+    /* right slant */
+    border-right: 15px solid transparent;
+    /* width */
+    border-top: 25px solid #fff;
+	border-bottom: none;
+    list-style: none;
+	)
+}
+
+.domo-content {
+	margin: 15% 20% 20% 20%;
+}
+
+/*#grad1 {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 25px, #fff 25px, #fff 50px);
+}
+
+#grad2 {
+  background-image: repeating-linear-gradient(70deg, transparent, transparent 25px, #fff 25px, #fff 30px);
+}
+*/
+/* don't need these parts */
+
 /* right arm */
-.domo ul:before{
+/*.domo ul:before{
   content: ' ';
   border-radius: 12px;
   background: rgb(108,62,29);
@@ -2033,9 +2129,9 @@ h1{
   position: absolute;
   top: 30px;
   right: -50px;
-}
+}*/
 /* left arm */
-.domo ul:after{
+/*.domo ul:after{
   content: ' ';
   border-radius: 12px;
   background: rgb(108,62,29);
@@ -2044,68 +2140,37 @@ h1{
   position: absolute;
   top: 30px;
   left: -50px;
-}
+}*/
 /* right foot */
-.domo ul:last-child:before{
+/*.domo ul:last-child:before{
   content: ' ';
   border-radius: 12px;
   background: rgb(108,62,29);
   width: 50px;
   height: 100px;
-  position: absolute;
+  position: absolute;*/
   /* where leg begins */
-  top: 180px;
+/*  top: 180px;
   right: 10px;
-}
+}*/
 /* left foot */
-.domo ul:last-child:after{
+/*.domo ul:last-child:after{
   content: ' ';
   border-radius: 12px;
   background: rgb(108,62,29);
   width: 50px;
   height: 100px;
-  position: absolute;
+  position: absolute;*/
   /* where leg begins */
-  top: 180px;
+/*  top: 180px;
   left: 10px;
-}
-/* mouth red background */
-.domo ul:first-child {
-  background: #c00;
-}
-/* bottom teeth */  
-.domo ul li {
-  width: 0;
-  height: 0;
-  /* left slant */
-  border-left: 15px solid transparent;
-  /* right slant*/
-  border-right: 15px solid transparent;
-  /* width */
-  border-bottom: 15px solid #fff;
-  position: relative;
-  /* position from top */
-  top:  75px;
-  float: left;
-  margin-left: -5px;
-  list-style: none;
-  left: 10px;
-}
-/* top teeth */
-.domo ul:first-child li {
-  width: 0;
-  height: 0;
-  /* left slant */
-  border-left: 15px solid transparent;
-  /* right slant */
-  border-right: 15px solid transparent;
-  /* width */
-  border-top: 15px solid #fff;
-  border-bottom: none;
-  position: relative;
-  top: 00;
-  float: left;
-  margin-left: -5px;
-  list-style: none;
-  left: 10px;
-}
+}*/
+  /* body torso */
+  /*.domo {
+    width: 210px;
+    margin: 20px 40px;
+    height: 300px;
+    border-radius: 15px;
+    background: rgb(108,62,29);
+    position: relative;
+  }*/
