@@ -1,13 +1,19 @@
 .domo.span12
+  .domo-forehead
+  %span.domo-eyes.span1.offset1
+  %span.domo-eyes.span1.offset10
+/ .domo.span12
 .domo.span8.offset2
-  .instructions.span8
+  .domo-mouth.span8
     %ul
       %li.span2
       %li.span2
       %li.span2
       %li.span2
     .domo-content
-      %span Rawr! Feed the Domo Kun Photos :-)
+      .instructions
+        %span Rwarr! Drag and drop photos to keep Domo Kun happy :-)
+      / .instructions
       %form{action: @action, multipart: true, id: 'upload'}
         %table.filelist
           %tbody.files
@@ -20,24 +26,20 @@
           .bar{:style => "width:0%;"}
           .progress-extended &nbsp;
         .fileupload-loading
+      #dropzone
+        .domo-content
+          %span RAWRRRRR! DOMO KUN HAPPY!
+      / #dropzone.span8
+    / domo-content
     %ul
       %li.span2
       %li.span2
       %li.span2
       %li.span2
-  #dropzone.span8
-    %ul
-      %li.span2
-      %li.span2
-      %li.span2
-      %li.span2
-    .domo-content
-      %span DOMO KUN HAPPY!
-    %ul
-      %li.span2
-      %li.span2
-      %li.span2
-      %li.span2
-%span#upload_button.btn.btn-primary.fileinput-button{:style => "clear: both;"}
-  %i.icon-plus.icon-white
-  %a{ :href => "/#{@user.username}" } Reload, Ka-ching!
+  / .domo-mouth.span8
+/ domo.span8.offset2
+.span2.offset10.row
+  %span#upload_button.btn.btn-primary.fileinput-button{:style => "clear:both;"}
+    %i.icon-plus.icon-white
+    %a{:href => "/#{@user.username}", :style => "color:white;"} Reload, Ka-ching!
+/ span2.offset10
