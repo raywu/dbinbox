@@ -293,7 +293,7 @@ get_or_post '/send/:username/?*' do
 end
 
 get "/:username/?*" do
-  @@log.info " "
+  @@log.info "/#{params[:username]}"
   @subfolder = params[:splat].first
   @user = User.get(params[:username])
   @action = "/send/" + params[:username] + (@subfolder ? "/" + @subfolder : "")
@@ -308,4 +308,3 @@ get "/:username/?*" do
     haml :enter_password
   end
 end
-
