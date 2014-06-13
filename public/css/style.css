@@ -2090,23 +2090,11 @@ h1{
 /*  padding: 5px;*/
 /* }*/
 
-#upperteeth {
-	background-image: repeating-linear-gradient(
-	width: 0;
-	height: 0;
-	/* left slant */
-    border-left: 15px solid transparent;
-    /* right slant */
-    border-right: 15px solid transparent;
-    /* width */
-    border-top: 25px solid #fff;
-	border-bottom: none;
-    list-style: none;
-	)
 }
 
 .domo-content {
 	margin: 15% 20% 20% 20%;
+	z-index: 1;
 }
 
 /*#grad1 {
