@@ -8,18 +8,18 @@
       %li.span2
     .domo-content
       %span Rawr! Feed the Domo Kun Photos :-)
-      %form.span12{action: @action, multipart: true, id: 'upload'}
+      %form{action: @action, multipart: true, id: 'upload'}
         %table.filelist
           %tbody.files
-        %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
-          %i.icon-plus.icon-white
-          %span Choose files
-          %input{:multiple => "", :name => "files[]", :type => "file"}
-        .span10.fileupload-progress.fade
-          .progress.progress-success.progress-striped.active
-          .bar{:style => "width:0%;"}
-          .progress-extended &nbsp;
-        .fileupload-loading
+      %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
+        %i.icon-plus.icon-white
+        %span Choose files
+        %input{:multiple => "", :name => "files[]", :type => "file"}
+      .fileupload-progress.fade
+        .progress.progress-success.progress-striped.active
+        .bar{:style => "width:0%;"}
+        .progress-extended &nbsp;
+      .fileupload-loading
     %ul
       %li.span2
       %li.span2
