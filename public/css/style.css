@@ -2030,20 +2030,62 @@ background: #c00;
 border-radius: 10px;
 }
 
+.triangle-up li{
+    width: 12%;
+    height: 0;  
+    padding-left:12%;
+    padding-bottom: 12%;
+    overflow: hidden;
+}
+.triangle-up li:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    background-color: #c00;
+}
+
+.triangle-down li{
+    width: 12%;
+    height: 0;
+    padding-left:12%;
+    padding-top: 12%;
+    overflow: hidden;
+}
+.triangle-down li:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+     
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-top: 500px solid #fff;
+    background-color: #c00;
+}
+
 /* top teeth */
 .domo ul:first-child li {
     top: 0 !important;
-    /* left slant */
+	border-bottom: none;
+    
+	/* static px version
+	 left slant 
     border-left: 92px solid transparent;
-    /* right slant */
+     right slant 
     border-right: 92px solid transparent;
-    /* width */
-    border-top: 92px solid #fff;
-    border-bottom: none;
+     width 
+    border-top: 92px solid #fff;*/
+
 }
+/* teeth */
 .domo ul li {
-  width: 0;
-  height: 0;
   position: relative;
   float: left;
   margin-left: 5px;
@@ -2051,13 +2093,16 @@ border-radius: 10px;
   left: 0px;
   z-index: 2;
   bottom: 0;
-  /* bottom teeth */  
-  /* left slant */
+  
+  /* static px version for bottom teeth
+  width: 0;
+  height: 0;   
+   left slant 
   border-left: 92px solid transparent;
-  /* right slant*/
+   right slant
   border-right: 92px solid transparent;
-  /* width */
-  border-bottom: 92px solid #fff;
+   width 
+  border-bottom: 92px solid #fff;*/
 }
 
 .container.domo-container {
