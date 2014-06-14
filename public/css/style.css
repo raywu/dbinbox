@@ -61,12 +61,12 @@ h1{
 }
 
 #dropzone span{
-/*  vertical-align: middle;
-  display: block;*/
+  vertical-align: middle;
+  display: block;
 }
 
 #dropzone.in {
-/*    display: inline-block;*/
+    display: inline-block;
     font-size: 40px;
     line-height: 50px;
     font-weight: bold;
