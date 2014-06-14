@@ -47,7 +47,7 @@ h1{
 }
 
 .instructions, #dropzone {
-  display: inline-block;
+  display: block;
   color: #fff;
   text-align: center;
   font-size: 30px;
@@ -61,17 +61,17 @@ h1{
 }
 
 #dropzone span{
-  vertical-align: middle;
-  display: block;
+/*  vertical-align: middle;
+  display: block;*/
 }
 
 #dropzone.in {
-    display: inline-block;
+/*    display: inline-block;*/
     font-size: 40px;
     line-height: 50px;
     font-weight: bold;
-	position: relative !important;
-	top: -200px !important;
+/*	position: relative !important;*/
+/*	top: -200px !important;*/
 	z-index: 1;
 }
 #dropzone.hover {
@@ -2118,7 +2118,6 @@ border-radius: 10px;
 
 
 .domo-content {
-	margin: 15% 20% 20% 20%;
 }
 
 /*#grad1 {

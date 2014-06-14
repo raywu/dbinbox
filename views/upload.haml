@@ -10,11 +10,14 @@
       %li.span2
       %li.span2
       %li.span2
-    .domo-content
-      .instructions
+    .domo-content.row
+      .instructions.span8
         %span Rwarr! Drag and drop photos to keep #{@user.username}'s Domo Kun happy :-)
       / .instructions
-      %form{action: @action, multipart: true, id: 'upload'}
+      #dropzone.span8
+        %span RAWRRRRR! DOMO KUN HAPPY!
+      / #dropzone.span8
+      %form.span8{action: @action, multipart: true, id: 'upload'}
         %table.filelist
           %tbody.files
         %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
@@ -26,10 +29,6 @@
           .bar{:style => "width:0%;"}
           .progress-extended &nbsp;
         .fileupload-loading
-      #dropzone
-        .domo-content
-          %span RAWRRRRR! DOMO KUN HAPPY!
-      / #dropzone.span8
     / domo-content
     %ul.triangle-up
       %li.span2
