@@ -17,8 +17,8 @@
       #dropzone.col-xs-8.col-sm-8.col-md-8.col-lg-8
         %span.col-xs-6.col-xs-offset-1.col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.col-lg-6.col-lg-offset-1 RAWRRRRR! DOMO HAPPY!
 
-      %form.span8{action: @action, multipart: true, id: 'upload'}
-        %table.filelist.span6
+      %form.col-xs-8.col-sm-8.col-md-8.col-lg-8{action: @action, multipart: true, id: 'upload'}
+        %table.filelist.col-xs-6.col-sm-6.col-md-6.col-lg-6
           %tbody.files
         %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
           %i.icon-plus.icon-white
@@ -29,16 +29,14 @@
           .bar{:style => "width:0%;"}
           .progress-extended &nbsp;
         .fileupload-loading
-    / domo-content
+
     %ul.triangle-up
-      %li.span2
-      %li.span2
-      %li.span2
-      %li.span2
-  / .domo-mouth.span8
-/ domo.span8.offset2
-.domo.span2.offset10.row
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+	  
+.domo.col-xs-2.col-sm-2.col-md-2.col-lg-2.col-xs-offset-10.col-sm-offset-10.col-md-offset-10.col-lg-offset-10.row
   %span#upload_button.btn.btn-primary.fileinput-button{:style => "clear:both;"}
     %i.icon-plus.icon-white
     %a{:href => "/#{@user.username}", :style => "color:white;"} Reload, Ka-ching!
-/ span2.offset10
