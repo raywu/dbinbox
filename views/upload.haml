@@ -12,13 +12,13 @@
       %li.span2
     .domo-content.row
       .instructions.span8
-        %span.span6.offset1 Rwarr! Drag and drop photos to keep #{@user.username}'s Domo Kun happy :-)
+        %span.span6.offset1 Drag and drop photos. Keep #{@user.username}'s Domo happy :-)
       / .instructions
       #dropzone.span8
-        %span.span6.offset1 RAWRRRRR! DOMO KUN HAPPY!
+        %span.span6.offset1 RAWRRRRR! DOMO HAPPY!
       / #dropzone.span8
       %form.span8{action: @action, multipart: true, id: 'upload'}
-        %table.filelist
+        %table.filelist.span6
           %tbody.files
         %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
           %i.icon-plus.icon-white
