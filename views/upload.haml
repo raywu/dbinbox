@@ -17,9 +17,9 @@
         %span RAWRRRRR! DOMO HAPPY!
 
       %form.domo-form-padding-zero.col-xs-12.col-sm-12.col-md-12.col-lg-12{action: @action, multipart: true, id: 'upload'}
-        %table.filelist.col-xs-6.col-sm-6.col-md-6.col-lg-6
+        %table.filelist
           %tbody.files
-        %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
+        %span#upload_button.btn.btn-primary.fileinput-button{:style => ""}
           %i.icon-plus.icon-white
           %span Choose files
           %input{:multiple => "", :name => "files[]", :type => "file"}
@@ -34,8 +34,9 @@
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-	  
-.domo.col-xs-2.col-sm-2.col-md-2.col-lg-2.col-xs-offset-10.col-sm-offset-10.col-md-offset-10.col-lg-offset-10.row
+
+.row	  
+  .col-xs-2.col-sm-2.col-md-2.col-lg-2.col-xs-offset-10.col-sm-offset-10.col-md-offset-10.col-lg-offset-10
   %span#upload_button.btn.btn-primary.fileinput-button{:style => "clear:both;"}
     %i.icon-plus.icon-white
     %a{:href => "/#{@user.username}", :style => "color:white;"} Reload, Ka-ching!
