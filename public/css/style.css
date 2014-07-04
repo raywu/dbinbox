@@ -49,9 +49,8 @@ h1{
 .instructions, #dropzone {
   display: block;
   color: #fff;
-  text-align: center;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 2em;
+  line-height: 1.3em;
   font-weight: bold;
 }
 
@@ -67,11 +66,9 @@ h1{
 
 #dropzone.in {
     display: inline-block;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 2.2em;
+    line-height: 1.3em;
     font-weight: bold;
-/*	position: relative !important;*/
-/*	top: -200px !important;*/
 	z-index: 1;
 }
 #dropzone.hover {
@@ -1970,21 +1967,20 @@ h1{
 
 /* Domo.css */
 
-.domo {
-	height: 300px;
-}
-
-.domo-forehead {
-	height: 100px;
+.domo-upper-face {
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 .domo-eyes {
     content: "";
     border-radius: 50% 50%;
     background: #000;
-    width: 100%;
+    width: 7%;
     position: relative;
 	z-index: 1;
+	padding-right: 0px;
+	padding-left: 0px;
 }
 .domo-eyes:before{
 	content: "";
@@ -2033,8 +2029,12 @@ background: #c00;
 border-radius: 10px;
 }
 
+.triangle-up, .triangle-down {
+	padding-left: 4%;
+}
+
 .triangle-up li{
-    width: 12%;
+    width: 24%;
     height: 0;  
     padding-left:12%;
     padding-bottom: 12%;
@@ -2053,7 +2053,7 @@ border-radius: 10px;
 }
 
 .triangle-down li{
-    width: 12%;
+    width: 24%;
     height: 0;
     padding-left:12%;
     padding-top: 12%;
@@ -2118,9 +2118,9 @@ border-radius: 10px;
 	z-index: 200;
 }
 
-
-
-.domo-content {
+.domo-form-padding-zero {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*#grad1 {
