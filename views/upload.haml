@@ -11,13 +11,14 @@
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
     .row
       .instructions.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
-        %span Drag and drop photos. Keep #{@user.username}'s Domo happy :-)
+        %span Drag and drop photos
+		%span Keep #{@user.username}'s Domo happy :-)
 
       #dropzone.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
         %span RAWRRRRR! DOMO HAPPY!
 
       %form.domo-form-padding-zero.col-xs-12.col-sm-12.col-md-12.col-lg-12{action: @action, multipart: true, id: 'upload'}
-        %table.filelist
+        %table.filelist.col-xs-8.col-sm-8.col-md-8.col-lg-8.col-xs-offset-2.col-sm-offset-2.col-md-offset-2.col-lg-offset-2
           %tbody.files
         %span#upload_button.btn.btn-primary.fileinput-button{:style => ""}
           %i.icon-plus.icon-white
