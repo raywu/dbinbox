@@ -1,39 +1,39 @@
-.domo.col-xs-12.col-sm-12.col-md-12.col-lg-12
-  .domo-forehead
-  %span.domo-eyes.col-xs-1.col-xs-offset-1.col-sm-1.col-sm-offset-1.col-md-1.col-md-offset-1.col-lg-1.col-lg-offset-1
-  %span.domo-eyes.col-xs-1.col-xs-offset-10.col-sm-1.col-sm-offset-10.col-md-1.col-md-offset-10.col-lg-1.col-lg-offset-10
+.domo-upper-face.row
+  .domo-eyes.col-xs-1.col-sm-1.col-md-1.col-lg-1.col-lg-offset-1.col-xs-offset-1.col-sm-offset-1.col-md-offset-1
+  .domo-eyes.col-xs-1.col-sm-1.col-md-1.col-lg-1.col-lg-offset-8.col-xs-offset-8.col-sm-offset-8.col-md-offset-8
 
-.domo-mouth.col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2
-  %ul.triangle-down
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-  .domo-content.row
-    .instructions.col-xs-8.col-sm-8.col-md-8.col-lg-8
-      %span.col-xs-6.col-xs-offset-1.col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.col-lg-6.col-lg-offset-1 Drag and drop photos. Keep #{@user.username}'s Domo happy :-)
+.row
+  .domo-mouth.col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2
+    %ul.triangle-down
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+    .domo-content.row
+      .instructions.col-xs-8.col-sm-8.col-md-8.col-lg-8
+        %span.col-xs-6.col-xs-offset-1.col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.col-lg-6.col-lg-offset-1 Drag and drop photos. Keep #{@user.username}'s Domo happy :-)
 
-    #dropzone.col-xs-8.col-sm-8.col-md-8.col-lg-8
-      %span.col-xs-6.col-xs-offset-1.col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.col-lg-6.col-lg-offset-1 RAWRRRRR! DOMO HAPPY!
+      #dropzone.col-xs-8.col-sm-8.col-md-8.col-lg-8
+        %span.col-xs-6.col-xs-offset-1.col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.col-lg-6.col-lg-offset-1 RAWRRRRR! DOMO HAPPY!
 
-    %form.col-xs-8.col-sm-8.col-md-8.col-lg-8{action: @action, multipart: true, id: 'upload'}
-      %table.filelist.col-xs-6.col-sm-6.col-md-6.col-lg-6
-        %tbody.files
-      %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
-        %i.icon-plus.icon-white
-        %span Choose files
-        %input{:multiple => "", :name => "files[]", :type => "file"}
-      .fileupload-progress.fade
-        .progress.progress-success.progress-striped.active
-        .bar{:style => "width:0%;"}
-        .progress-extended &nbsp;
-      .fileupload-loading
+      %form.col-xs-8.col-sm-8.col-md-8.col-lg-8{action: @action, multipart: true, id: 'upload'}
+        %table.filelist.col-xs-6.col-sm-6.col-md-6.col-lg-6
+          %tbody.files
+        %span#upload_button.btn.btn-primary.fileinput-button{:style => "margin: 0 auto;"}
+          %i.icon-plus.icon-white
+          %span Choose files
+          %input{:multiple => "", :name => "files[]", :type => "file"}
+        .fileupload-progress.fade
+          .progress.progress-success.progress-striped.active
+          .bar{:style => "width:0%;"}
+          .progress-extended &nbsp;
+        .fileupload-loading
 
-  %ul.triangle-up
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
-    %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+    %ul.triangle-up 
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
+      %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
 	  
 .domo.col-xs-2.col-sm-2.col-md-2.col-lg-2.col-xs-offset-10.col-sm-offset-10.col-md-offset-10.col-lg-offset-10.row
   %span#upload_button.btn.btn-primary.fileinput-button{:style => "clear:both;"}
