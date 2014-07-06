@@ -2125,6 +2125,10 @@ border-radius: 10px;
 	opacity: 0.2;
 }
 
+.navbar-domo:hover {
+  opacity: 1;
+}
+
 .navbar-domo-content {
 	color: white;
 }
