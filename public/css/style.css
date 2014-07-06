@@ -2133,6 +2133,17 @@ border-radius: 10px;
 	color: white;
 }
 
+@media (max-width: 767px) {
+    .navbar .navbar-nav .navbar-domo {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse .navbar-domo {
+        text-align: center;
+    }
+}
+
 /*#grad1 {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 25px, #fff 25px, #fff 50px);
 }
