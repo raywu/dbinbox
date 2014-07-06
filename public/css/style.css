@@ -2108,24 +2108,19 @@ border-radius: 10px;
   border-bottom: 92px solid #fff;*/
 }
 
-.container.domo-container {
-	width: 100%;
-	height: auto;
-}
-
 .domo-body {
 	background: rgb(108,62,29);
 	z-index: 200;
 }
 
-.domo-form-padding-zero {
+/*.domo-form-padding-zero {
 	padding-left: 0;
 	padding-right: 0;
-}
+}*/
 
 .navbar-domo {
-	background-color: rgb(108,62,29);
-	border-color: rgb(108,62,29);
+	background-color: rgb(108,62,29,0.1);
+	border-color: rgb(108,62,29,0.1);
 	padding-right: 15px;
 }
 
