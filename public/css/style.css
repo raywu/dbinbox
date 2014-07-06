@@ -2134,12 +2134,12 @@ border-radius: 10px;
 }
 
 @media (max-width: 767px) {
-    .navbar .navbar-nav .navbar-domo {
+    .navbar .navbar-nav {
         display: inline-block;
         float: none;
     }
 
-    .navbar .navbar-collapse .navbar-domo {
+    .navbar .navbar-collapse {
         text-align: center;
     }
 }
