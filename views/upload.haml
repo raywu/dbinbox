@@ -16,20 +16,19 @@
       #dropzone.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
         %span RAWRRRRR! DOMO HAPPY!
 
-      .row
-        %form.domo-form-padding-zero.col-xs-12.col-sm-12.col-md-12.col-lg-12{action: @action, multipart: true, id: 'upload'}
-          .row
-            %table.filelist.col-xs-8.col-sm-8.col-md-8.col-lg-8.col-xs-offset-2.col-sm-offset-2.col-md-offset-2.col-lg-offset-2
-              %tbody.files
-            .fileupload-progress.fade.col-xs-8.col-sm-8.col-md-8.col-lg-8.col-xs-offset-2.col-sm-offset-2.col-md-offset-2.col-lg-offset-2
-              .progress.progress-success.progress-striped.active
-              .bar{:style => "width:0%;"}
-              .progress-extended &nbsp;
-            .fileupload-loading
-            #upload_button.btn.btn-primary.fileinput-button.col-xs-12.col-sm-2.col-md-2.col-lg-2{:style => ""}
-              %i.icon-plus.icon-white
-              %span Choose files
-              %input{:multiple => "", :name => "files[]", :type => "file"}
+      %form.col-xs-12.col-sm-12.col-md-12.col-lg-12{action: @action, multipart: true, id: 'upload'}
+        .row
+          %table.filelist.col-xs-8.col-sm-8.col-md-8.col-lg-8.col-xs-offset-2.col-sm-offset-2.col-md-offset-2.col-lg-offset-2
+            %tbody.files
+          .fileupload-progress.fade.col-xs-8.col-sm-8.col-md-8.col-lg-8.col-xs-offset-2.col-sm-offset-2.col-md-offset-2.col-lg-offset-2
+            .progress.progress-success.progress-striped.active
+            .bar{:style => "width:0%;"}
+            .progress-extended &nbsp;
+          .fileupload-loading
+          #upload_button.btn.btn-primary.fileinput-button.col-xs-12.col-sm-2.col-md-2.col-lg-2{:style => ""}
+            %i.icon-plus.icon-white
+            %span Choose files
+            %input{:multiple => "", :name => "files[]", :type => "file"}
 
     %ul.triangle-up 
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
