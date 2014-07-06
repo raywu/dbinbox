@@ -2119,9 +2119,10 @@ border-radius: 10px;
 }*/
 
 .navbar-domo {
-	background-color: rgb(108,62,29,0.1);
-	border-color: rgb(108,62,29,0.1);
+	background-color: rgb(108,62,29);
+	border-color: rgb(108,62,29);
 	padding-right: 15px;
+	opacity: 0.2;
 }
 
 .navbar-domo-content {
