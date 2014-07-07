@@ -1,15 +1,15 @@
-.span8.offset2
+.col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2.col-lg-2.col-lg-offset-2
   %h1 
     <a href="/"><img src="/img/domokun_logo.gif" style="height:2em" /></a>
-    Domokun!
-    %small Feed the Domokun the Photos
+    Domo Kun Photos!
+    %small Collect photos from friends
 
   -if !session[:registered] # if the user isn't registered
     %form.form-inline{action: "/", method: "post"}
       %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
         .input-prepend
-          %span.add-on FeedDomokunPhotos.com/
-          %input.span4#username(placeholder="your_username_here" name="username" type="text" value="#{params['username']}")
+          %span.add-on DomoKunPhotos.com/
+          %input.span4#username(placeholder="create_username" name="username" type="text" value="#{params['username']}")
         %button.btn.btn-success(type='submit' title="links with Dropbox") link with Dropbox
         %span.help-inline=@error
   -else
