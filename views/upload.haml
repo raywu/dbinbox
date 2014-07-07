@@ -52,5 +52,9 @@
         %li
           %button.btn.btn-danger.navbar-btn{type: "button"}
             %a{href: "/#{@user.username}", style: "color: white;"} Reload, Ka-ching!
+      %ul.nav.navbar-nav
+        %li
+          .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/domokuntest", "data-type" => "icon"}
+            %p Get friends to add photos
     / /.navbar-collapse
   / /.container-fluid
