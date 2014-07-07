@@ -2170,6 +2170,10 @@ h3 a {
 	color: #fff;
 }
 
+h3 a:hover {
+	color: #fff;
+}
+
 /*#grad1 {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 25px, #fff 25px, #fff 50px);
 }
