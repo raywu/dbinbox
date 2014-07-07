@@ -2143,7 +2143,7 @@ border-radius: 10px;
 
 @media (max-width: 767px) {
     .navbar .navbar-nav {
-        display: inline-block;
+        display: block;
         float: none;
     }
 
