@@ -2119,6 +2119,7 @@ border-radius: 10px;
 .domo-body {
 	background: rgb(108,62,29);
 	z-index: 200;
+	color: white;
 }
 
 /*.domo-form-padding-zero {
