@@ -4,6 +4,9 @@
     Domo Kun Photos!
     %small Collect photos from friends
 
+  %h3{style: "color: green;"}
+    Great for gathering photos from events: weddings, dinner parties, and retrieving photos from lost camera.
+
   -if !session[:registered] # if the user isn't registered
     %form.form-inline{action: "/", method: "post"}
       %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
