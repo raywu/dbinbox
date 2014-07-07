@@ -40,21 +40,21 @@
   .container-fluid
     / Brand and toggle get grouped for better mobile display
     .navbar-header
-      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+      %button.navbar-toggle{"data-target" => "#domo-navbar-collapse", "data-toggle" => "collapse", type: "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{href: "#", style: "color: white;"} #{@user.username}'s Domo
     / Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    #domo-navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.btn-danger.navbar-btn{type: "button"}
             %a{href: "/#{@user.username}", style: "color: white;"} Reload, Ka-ching!
       %ul.nav.navbar-nav
         %li
-          .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/domokuntest", "data-type" => "icon"}
-            %p Get friends to add photos
+          %i.fa.fa-facebook.fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "icon"}
+            %span Get friends to add photos
     / /.navbar-collapse
   / /.container-fluid
