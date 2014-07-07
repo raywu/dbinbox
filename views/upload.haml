@@ -45,17 +45,17 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#", :style => "color: white;"} #{@user.username}'s Domo
+      .navbar-brand{:style => "color: white;"} Domo Kun Photos
     / Collect the nav links, forms, and other content for toggling
     #domo-navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
           %button.btn.btn-link.navbar-btn
-            %a{:href => "/", :style => "color: white; background-color: transparent;"} Set up a new Domo Kun Photos collection
+            %a{:href => "/", :style => "color: white; background-color: transparent;"} New Sign Up
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.navbar-btn{:style => "color: white; background-color: transparent;"}
-            %span Invite friends to add photos for #{@user.username}:
+            %span Invite friends to add photos to #{@user.username}'s Domo:
             .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "button"}
         %li
           %button.btn.btn-danger.navbar-btn
