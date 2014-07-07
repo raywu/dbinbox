@@ -50,11 +50,12 @@
     #domo-navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          %i.fa.fa-facebook
-          Get friends to add photos
+          %button.btn.btn-link
+            %i.fa.fa-facebook
+            Invite friends to add photos
       %ul.nav.navbar-nav.navbar-right
         %li
-          %button.btn.btn-danger.navbar-btn
+          %button.btn.btn-danger
             %a{:href => "/#{@user.username}", :style => "color: white;"} Reload, Ka-ching!
     / /.navbar-collapse
   / /.container-fluid
