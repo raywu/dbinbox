@@ -51,11 +51,11 @@
       %ul.nav.navbar-nav
         %li
           %button.btn.btn-link.navbar-btn
-            %a{:href => "/", :style => "color: white; background-color: transparent;"} New Sign Up
+            %a{:href => "/", :style => "color: white; background-color: transparent;"} Sign Up
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.navbar-btn{:style => "color: white; background-color: transparent;"}
-            %span Invite friends to add photos to #{@user.username}'s Domo:
+            %span Invite friends to #{@user.username}'s Domo:
             .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "button"}
         %li
           %button.btn.btn-danger.navbar-btn
