@@ -50,8 +50,7 @@
     #domo-navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          %button.fb-share-button.btn.btn-link.navbar-btn{:style => "color: white;", "data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}"}
-            .i.fa.fa-facebook
+          %button.btn.btn-link.navbar-btn.fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "icon", :style => "color: white;"}
             Invite friends to add photos
       %ul.nav.navbar-nav.navbar-right
         %li
