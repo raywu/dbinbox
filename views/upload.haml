@@ -48,13 +48,14 @@
       %a.navbar-brand{href: "#", style: "color: white;"} #{@user.username}'s Domo
     / Collect the nav links, forms, and other content for toggling
     #domo-navbar-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "icon"}
+            %i.fa.fa-facebook
+            %span Get friends to add photos
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.btn-danger.navbar-btn{type: "button"}
             %a{href: "/#{@user.username}", style: "color: white;"} Reload, Ka-ching!
-      %ul.nav.navbar-nav
-        %li
-          %i.fa.fa-facebook.fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "icon"}
-            %span Get friends to add photos
     / /.navbar-collapse
   / /.container-fluid
