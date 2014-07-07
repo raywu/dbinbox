@@ -50,7 +50,7 @@ h1{
   display: block;
   color: #fff;
   font-size: 2em;
-  line-height: 2em;
+  line-height: 1.5em;
   font-weight: bold;
 }
 
@@ -97,11 +97,11 @@ h1{
 
 /* buttons should be above the file upload div */
 #show_send_message,
-#upload_button {
+/*#upload_button {
    float: right;
    z-index: 2;
 }
-
+*/
 .file-upload-progress {
   clear: both;
 }
