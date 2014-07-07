@@ -13,7 +13,7 @@
           %button.btn.btn-success(type='submit' title="links with Dropbox") link with Dropbox
         %span.help-inline=@error
   -else
-    %p{style: "color: green"} You're registered!
+    %h3{style: "color: #d9534f;"} You're registered! Copy or click on this link to share with friends:
     %p
       -url = url('/') + session[:username] if session[:username]
       %a{href: url}=url
