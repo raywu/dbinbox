@@ -16,7 +16,7 @@
   -else
     %h3{style: "color: #428bca;"}
       You're registered! Copy or click on this link to share with friends:
-    %h3
+    %h3.btn.btn-danger
       -url = url('/') + session[:username] if session[:username]
       %a{href: url}=url
 
