@@ -14,6 +14,15 @@
     %link{rel: "stylesheet", href: url("/css/jquery.fileupload-ui.css")}
     %link{rel: "stylesheet", href: url("/css/style.css")}
   %body.domo-body
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=311107329056003&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     .container.col-xs-12.col-sm-12.col-md-12.col-lg-12
       =yield
 
@@ -26,15 +35,6 @@
     %script{src: url("/js/jquery.fileupload-ui.js")}
     %script{src: url("/js/app.js")}
     %script{src: url("/js/bootstrap.min.js")}
-    #fb-root
-    :javascript
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=311107329056003&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
     / google analysics
     :javascript
       var _gaq = _gaq || [];
