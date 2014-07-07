@@ -9,7 +9,7 @@
       %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
         .input-prepend
           %span.add-on DomoKunPhotos.herokuapp.com/
-          %input#username(placeholder="create_username" name="username" type="text" value="#{params['username']}")
+          %input#username(placeholder="create_username" name="username" type="text" style="color: #428bca;" value="#{params['username']}")
           %button.btn.btn-success(type='submit' title="links with Dropbox") link with Dropbox
         %span.help-inline=@error
   -else
