@@ -45,12 +45,12 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"} #{@user.username}'s Domo
+      %a.navbar-brand{:href => "#", :style => "color: white;"} #{@user.username}'s Domo
     / Collect the nav links, forms, and other content for toggling
     #domo-navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li.fb-share-button{"data-href" => "https://developers.facebook.com/docs/plugins/", "data-type" => "link"}
-          %i.fa.fa-facebook
+          %i.fa.fa-facebook>
           Get friends to add photos
       %ul.nav.navbar-nav.navbar-right
         %li
