@@ -7,7 +7,7 @@
   -if !session[:registered] # if the user isn't registered
     %form.form-inline{action: "/", method: "post"}
       %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
-        %p{style: "color: #428bca;"} Enter Username:
+        %h3{style: "color: #428bca;"} Enter Username:
         .input-prepend
           %span.add-on DomoKunPhotos.herokuapp.com/
           %input#username(placeholder="create_username" name="username" type="text" style="color: #428bca;" value="#{params['username']}")
