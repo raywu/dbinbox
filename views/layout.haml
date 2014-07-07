@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 %html
   %head
-    %title Domo Photo Recovery!
+    %title Domo Kun: collect photos from friends!
     %meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
     %meta(name="viewport" content="width=device-width")
-    %meta(property="og:title" content="Feed the Domo Kun Photos!")
-    %meta(property="og:description" content="The Domokun Recovers Photos. Drag and Drop Please")
-    %meta(property="og:url" content="http://immense-shelf-1596.herokuapp.com/")
-    %meta(property="og:image" content="http://immense-shelf-1596.herokuapp.com/img/domokun_logo.gif")
+    %meta(property="og:title" content="Collect Photos from Friends")
+    %meta(property="og:description" content="Domo Kun collects photos from your friends. Drag and Drop!")
+    %meta(property="og:url" content="http://domokunphotos.herokuapp.com/")
+    %meta(property="og:image" content="http://domokunphotos.herokuapp.com/img/domokun_logo.gif")
     %link{rel: "stylesheet", href: url("/css/bootstrap.min.css")}
     /[if lt IE 7]
       %link{rel: "stylesheet", href: "http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"}
@@ -26,6 +26,15 @@
     %script{src: url("/js/jquery.fileupload-ui.js")}
     %script{src: url("/js/app.js")}
     %script{src: url("/js/bootstrap.min.js")}
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=311107329056003&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     / google analysics
     :javascript
       var _gaq = _gaq || [];
