@@ -11,10 +11,10 @@
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
     .row
       .instructions.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
-        %span Drag and drop photos. Keep #{@user.username}'s Domo happy :-)
+        %p Drag and drop photos
 
       #dropzone.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
-        %span RAWRRRRR! DOMO HAPPY!
+        %p RAWRRRRR! DOMO HAPPY!
 
       %form.col-xs-12.col-sm-12.col-md-12.col-lg-12{action: @action, multipart: true, id: 'upload'}
         .row
@@ -29,6 +29,8 @@
             %i.icon-plus.icon-white
             %span Choose files
             %input{:multiple => "", :name => "files[]", :type => "file"}
+          .instructions.text-center.col-xs-12.col-sm-12.col-md-12.col-lg-12
+            %p Keep #{@user.username}'s Domo happy :-)
 
     %ul.triangle-up 
       %li.col-xs-2.col-sm-2.col-md-2.col-lg-2
