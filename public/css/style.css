@@ -2122,10 +2122,9 @@ border-radius: 10px;
 	color: white;
 }
 
-/*.domo-form-padding-zero {
-	padding-left: 0;
-	padding-right: 0;
-}*/
+.domo-body h1 small {
+    color: green;
+}
 
 .navbar-domo {
 	background-color: rgb(108,62,29);
