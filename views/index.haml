@@ -8,20 +8,21 @@
     %form.form-inline{action: "/", method: "post"}
       %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
         .input-prepend
+          %p Enter Username:
           %span.add-on DomoKunPhotos.herokuapp.com/
           %input#username(placeholder="create_username" name="username" type="text" style="color: #428bca;" value="#{params['username']}")
           %button.btn.btn-success(type='submit' title="links with Dropbox") link with Dropbox
         %span.help-inline=@error
   -else
-    %h3{style: "color: #d9534f;"} You're registered! Copy or click on this link to share with friends:
-    %p
+    %p{style: "color: #428bca;"} You're registered! Copy or click on this link to share with friends:
+    %h3{style: "color: #d9534f;"}
       -url = url('/') + session[:username] if session[:username]
       %a{href: url}=url
 
 .col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-6.col-lg-offset-3
   %h3{style: "color: #428bca;"}
     Lost your phone? Photos didn't turn out?
-  %h3{style: "color: #428bca;"}
+  %p
     Share a link through Domo Kun Photos to crowdsource from your friends.
   %p
     Great for gathering wedding photos, dinner party shots, and funny moments from the previous night's out. Photos are scattered amongst friends' phones and cameras. Don't miss out!
