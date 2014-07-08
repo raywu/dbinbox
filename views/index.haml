@@ -7,7 +7,7 @@
   -if !session[:registered] # if the user isn't registered
     %form.form-inline{action: "/", method: "post"}
       %fieldset.control-group{class: @error.nil? || @error.empty? ? "" : "error"}
-        %h3{style: "color: #428bca;"} Enter Username:
+        %h3{style: "color: #428bca;"} Create Username:
         .input-prepend
           %span.add-on DomoKunPhotos.herokuapp.com/
           %input#username(placeholder="create_username" name="username" type="text" style="color: #428bca;" value="#{params['username']}")
@@ -22,14 +22,16 @@
 
 .col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-6.col-lg-offset-3
   %h3{style: "color: #428bca;"}
-    Lost your phone? Photos didn't turn out?
+    Lost your phone? Photos washed out?
   %p
     Share a link through Domo Kun Photos and crowdsource photos from your friends.
   %p
-    Great for aggregating wedding photos & dinner party shots, and reliving funny moments from the previous night's out. Photos are scattered amongst friends' phones and cameras. Don't miss out!
+    Great for aggregating wedding photos & dinner party shots, and reliving funny moments from the previous night's out.
+  %p
+    Gather photos on your friends' phones and cameras. Don't miss out!
 
   %h3{style: "color: #428bca;"}
-    Instructions
+    Setup Instructions
   %ol
     %li
       Choose a new username and click "link with Dropbox". Domo Kun Photos will set up a unique URL (with the username).
