@@ -52,14 +52,14 @@
       %ul.nav.navbar-nav
         %li
           %button.btn.btn-link.navbar-btn.btn-signup
-            %a{:href => "/"} Sign Up
+            %a{:href => "/"} Get Your Own
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.navbar-btn{:style => "color: white; background-color: transparent;"}
-            %span Invite friends to #{@user.username}'s Domo:
+            %span Invite Friends to Add Photos to #{@user.username}'s Domo:
             .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "button"}
         %li
-          %button.btn.btn-signup.navbar-btn
+          %button.btn.btn-link.btn-signup.navbar-btn
             %a{:href => "/#{@user.username}"} Reload, Ka-ching!
     / /.navbar-collapse
   / /.container-fluid
