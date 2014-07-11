@@ -1,5 +1,10 @@
-dbinbox
-======
+Domokunphotos
+=============
+
+Domo Kun Photos is open source. This [software](https://github.com/raywu/domokunphotos) project is originally forked from [christiangenco/dbinbox](https://github.com/christiangenco/dbinbox). Share a link through Domo Kun Photos and crowdsource photos from your friends: http://domokunphotos.herokuapp.com/
+
+Forked from dbinbox (README)
+----------------------------
 
 **Notice**: this branch is not longer the deployed branch in preparation for handling financial data for premium features on dbinbox.com. This public branch can now be simplified to support single instance deployments on Heroku (or another PaaS), and won't need to support more than a single account.
 
