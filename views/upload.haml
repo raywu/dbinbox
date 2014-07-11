@@ -59,7 +59,7 @@
             %span Invite friends to #{@user.username}'s Domo:
             .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "button"}
         %li
-          %button.btn.btn-danger.navbar-btn
-            %a{:href => "/#{@user.username}", :style => "color: white;"} Reload, Ka-ching!
+          %button.btn.btn-signup.navbar-btn
+            %a{:href => "/#{@user.username}"} Reload, Ka-ching!
     / /.navbar-collapse
   / /.container-fluid
