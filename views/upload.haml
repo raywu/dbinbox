@@ -56,7 +56,7 @@
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.navbar-btn{:style => "color: white; background-color: transparent;"}
-            %span Ask Friends to Add Photos to #{@user.username}:
+            %span{:style => "font-size: smaller;"} Ask Friends to Add Photos to #{@user.username}:
             .fb-share-button{"data-href" => "http://domokunphotos.herokuapp.com/#{@user.username}", "data-type" => "button"}
         %li
           %button.btn.btn-link.btn-signup.navbar-btn
